@@ -38,7 +38,7 @@
     border: none;
     font-weight: 600;
     color: #FFFFFF;
-
+    cursor: pointer;
 }
 
 .dark1{
@@ -170,10 +170,151 @@ main>section{
     margin-bottom: 32px;
 }
 
+/* feature will enjoy section  */
 
+.feature-will-enjoy-section{
+    justify-content: space-between;
+}
+
+.enjoy-section-col{
+width: 50%;
+}
+
+.feature-will-enjoy-section .col1{
+    max-width: 586px;
+    margin: 40px 0;
+}
+
+.feature-will-enjoy-section .col2 img{
+width: 100%;
+}
+
+.feature-will-enjoy-section .section-description{
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+
+.enjoy-section-body .card{
+   padding: 30px;
+   /* background-color: #FFFFFF; */
+   border-radius: 8px;
+   box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+   background: rgb(255, 255, 255);
+margin-bottom: 20px;
+   
+}
+
+.enjoy-section-body .card-title{
+font-size: 1.25rem;
+}
+
+.experience-badge{
+padding: 42px 46px;
+margin-top: -105px;
+margin-left: -100px;
+}
+
+.experience-badge .experience-time{
+    font-size: 4rem;
+    font-weight: 700;
+
+}
+
+.experience-badge .experience{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+
+
+/* Facts Section style  */
+
+
+.facts-section .facts-head{
+    max-width: 542px;
+    margin-bottom: 100px;
+
+}
+
+.facts-section .facts-head .section-title{
+    margin-bottom: 24px;
+}
+
+.facts-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+.fact-card{
+    width: 240px;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(255, 144, 14, 1);
+    border-radius: 8px;
+    padding: 35px 35px;
+
+}
+
+.fact-card .fact-number{
+    padding: 10px 0;
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: rgba(66, 66, 66, 1);
+}
+
+.fact-card .fact-name{
+    font-size: 1.25rem;
+    color: rgba(114, 114, 114, 1);
+    font-weight: 600;
+}
+
+/* sponsors section  */
+
+.sponsors-section{
+
+}
+
+.sponsors-section .sponsors-head{
+    max-width: 542px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.sponsors-head .sponsors-description{
+    margin: 24px 0 50px 0;
+}
+
+.sponsors-container{
+ display: grid;
+ grid-template-columns: repeat(5, 1fr);
+}
+
+.sponsors-container img{
+    filter: grayscale(100%);
+}
+
+
+/* Footer section design  */
+
+.footer-section{
+
+    max-width: 1440;
+    margin-top: 130px;
+    background-color: rgba(255, 144, 14, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 38px 20px;
+}
 
 
 /* Responsive styles  */
+
+
 
 @media screen and (max-width:576px){
    .section-title{
@@ -212,11 +353,57 @@ main>section{
         margin-left: 30px;
     }
 
-    .our-feature-section .our-feature-images {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        gap: 24px;
+
+
+    .feature-will-enjoy-section {
+        /* justify-content: space-between; */
+        flex-direction: column;
     }
+
+    .feature-will-enjoy-section .col1 {
+        margin: 0;
+    }
+
+    .enjoy-section-col{
+        width: 100%;
+    }
+
+    .enjoy-section-col2 {
+        element.style {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+
+    .experience-badge{
+        padding: 20px 25px;
+        margin: 0 auto;
+        }
+
+        .experience-badge .experience-time{
+           font-size: 2rem;
+            }
+
+
+  .facts-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    justify-items: center;
+}
+
+.our-feature-section .our-feature-images {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: 1fr;
+}
+
+.sponsors-container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 40px;
+}
 
 }
 
@@ -231,4 +418,21 @@ main>section{
         margin: 0 auto;
         max-width: 537px;
     }
+
+    .facts-section .facts-container {
+        grid-template-columns: repeat(2, 1fr);
+        /* gap: 30px; */
+        justify-items: center;
+    }
+
+    .sponsors-container {
+        grid-template-columns: 2fr;
+        justify-items: center;
+        gap: 40px;
+    }
+
+
+
 }
+
+
