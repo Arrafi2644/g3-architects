@@ -458,6 +458,7 @@ main>section {
 
     .feature-will-enjoy-section {
         flex-direction: column;
+        width: calc(100% - 20px);
     }
 
     .enjoy-section-col {
